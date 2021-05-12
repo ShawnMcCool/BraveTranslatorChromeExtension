@@ -1,0 +1,3 @@
+#!/bin/bash
+
+zip -r BraveTranslator.zip *.json *.js *.html ./images 

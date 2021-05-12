@@ -1,0 +1,27 @@
+{
+  "name": "Brave Translator",
+  "description": "A quick way to translate full pages in Brave / Chromium. Click the icon or Ctrl + Shift + 2.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [ "tabs" ],
+  "action": {
+    "default_title": "Translate this page to English.",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "24": "images/icon-24.png",
+      "32": "images/icon-32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "translate-page": {
+      "suggested_key": {
+        "default": "Ctrl + Shift + 2",
+        "mac": "Ctrl + Shift + 2"
+      },
+      "description": "Translates current page."
+    }
+  }
+}
